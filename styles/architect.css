@@ -112,12 +112,14 @@ main {
     color: #FF900E;
     font-weight: 700;
 }
+
 /* feature section styles  */
-.features{
+.features {
     display: flex;
     margin-top: 130px;
     gap: 100px;
 }
+
 .feature-content .card {
     padding: 30px;
     margin-bottom: 20px;
@@ -125,9 +127,10 @@ main {
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 }
-.features .section-title{
+
+.features .section-title {
     border-left: 5px solid #FF900E;
-   padding-left: 20px;
+    padding-left: 20px;
 }
 
 /* facts section  */
@@ -142,15 +145,30 @@ main {
     text-align: center;
     padding: 30px;
 }
-.ten-years-badge{
+
+.feature-img img {
+    height: 90%;
+    margin-left: 90px;
+}
+
+.ten-years-badge {
     border-radius: 8px;
     background: #FF900E;
     color: #FFF;
-    width: 342px;
+    width: 340px;
     padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
 }
-.ten-years-badge h2{
+
+.ten-years-badge h2 {
     font-size: 4rem;
+    margin: 0;
+}
+
+.ten-years-badge p {
+    font-size: 1.5rem;
 }
 
 .facts-card-container .card-title {
@@ -167,19 +185,20 @@ main {
 }
 
 /* sponsors styles */
-.sponsors{
+.sponsors {
     text-align: center;
 }
 
-.sponsor-img-container{
+.sponsor-img-container {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
     align-items: center;
 }
+
 .sponsor-img-container img {
-width: 165px;
+    width: 165px;
 }
 
 /* responsive stlye  */
@@ -191,25 +210,37 @@ width: 165px;
     }
 
     nav,
-    .teams-container ,
-    .facts-card-container ,
-    .sponsor-img-container
-     {
+    .teams-container,
+    .facts-card-container,
+    .sponsor-img-container,
+    .features {
         flex-direction: column;
+    }
+
+    .feature-img img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ten-years-badge {
+        position: static;
+
     }
 
     .teams-img-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .teams-content, .facts-card-container {
+    .teams-content,
+    .facts-card-container {
         padding-right: 20px;
         padding-left: 20px;
     }
-    .facts-card-container{
+
+    .facts-card-container {
         gap: 20px;
     }
-    
+
 }
 
 /* tablet or medium devices */
@@ -219,6 +250,7 @@ width: 165px;
     }
 
     nav,
+    .features,
     .teams-container,
     .sponsor-img-container {
         flex-direction: column;
